@@ -6,7 +6,9 @@
 import "tfconfig-functions" as config
 
 # List of prohibited resources
-prohibited_list = ["aws_vpc", "azurerm_virtual_network", "google_compute_network"]
+# prohibited_list = ["aws_vpc", "azurerm_virtual_network", "google_compute_network", "azurerm_public_ip"]
+prohibited_list = ["azurerm_public_ip"]
+
 
 # Get all Resources
 allResources = config.find_all_resources()
